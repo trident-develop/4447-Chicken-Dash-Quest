@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911883926437",
+    "project_id": "chicken-dash-quest",
+    "storage_bucket": "chicken-dash-quest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911883926437:android:dfd9a2e3c602ada711064c",
+        "android_client_info": {
+          "package_name": "com.gamegos.adventure.bay.paradise.f"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAU-faIBcyghLNFNcDh5NIKc3QTZbcmMPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

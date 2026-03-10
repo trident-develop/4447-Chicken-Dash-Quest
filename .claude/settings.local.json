@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls /Users/anna/AndroidStudioProjects/ChickenDashQuest/app/src/main/res/drawable/*.png | xargs -I{} basename {})",
+      "Bash(cd /Users/anna/AndroidStudioProjects/ChickenDashQuest/app/src/main/java/com/gamegos/adventure/bay/paradise/f && mkdir -p storage audio game/model game/logic ui/components ui/screens ui/navigation)",
+      "Bash(cd /Users/anna/AndroidStudioProjects/ChickenDashQuest && ./gradlew assembleDebug 2>&1 | tail -60)"
+    ]
+  }
+}
