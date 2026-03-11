@@ -1,5 +1,6 @@
 package com.gamegos.adventure.bay.paradise.f.ui.screens
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.animation.core.Easing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.StartOffset
@@ -39,7 +40,7 @@ import com.gamegos.adventure.bay.paradise.f.ui.components.GameFont
 @Composable
 fun LoadingScreen() {
     val infiniteTransition = rememberInfiniteTransition(label = "loading")
-
+    BackHandler(enabled = true) {}
     // Three eggs appearing with staggered timing
     val egg1Offset by infiniteTransition.animateFloat(
         initialValue = 20f,

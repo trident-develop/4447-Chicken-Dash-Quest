@@ -69,12 +69,6 @@ fun PrivacyPolicyScreen(onBack: () -> Unit) {
                     .weight(1f),
                 contentAlignment = Alignment.TopCenter
             ) {
-                Image(
-                    painter = painterResource(R.drawable.pop_up_1),
-                    contentDescription = null,
-                    modifier = Modifier.fillMaxSize(),
-                    contentScale = ContentScale.FillBounds
-                )
                 AndroidView(
                     factory = { context ->
                         FrameLayout(context).apply {
