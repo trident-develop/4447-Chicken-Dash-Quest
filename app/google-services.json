@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:911883926437:android:dfd9a2e3c602ada711064c",
+        "mobilesdk_app_id": "1:911883926437:android:9e4952f7c4ca0d0911064c",
         "android_client_info": {
-          "package_name": "com.gamegos.adventure.bay.paradise.f"
+          "package_name": "com.poshmark"
         }
       },
       "oauth_client": [],
