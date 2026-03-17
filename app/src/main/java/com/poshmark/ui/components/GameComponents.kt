@@ -1,5 +1,9 @@
 package com.poshmark.ui.components
 
+import android.Manifest
+import android.os.Build
+import androidx.activity.result.ActivityResultRegistry
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
@@ -32,6 +36,7 @@ import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.poshmark.R
+import java.net.URLDecoder
 
 val GameFont = FontFamily(Font(R.font.font))
 
@@ -172,4 +177,18 @@ fun TitleImage(drawableRes: Int, modifier: Modifier = Modifier) {
             .aspectRatio(3f),
         contentScale = ContentScale.Fit
     )
+}
+
+fun decodeUtf8(encoded: String?): String =
+    URLDecoder.decode(encoded, "UTF-8")
+
+fun requestNotify(registry: ActivityResultRegistry) {
+    val launcher = registry.register(
+        "requestPermissionKey",
+        ActivityResultContracts.RequestPermission()
+    ) {  }
+
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        launcher.launch(Manifest.permission.POST_NOTIFICATIONS)
+    }
 }
